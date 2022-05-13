@@ -9,6 +9,7 @@ const TodoInsert = ({ onInsert }) => {
     setValue(e.target.value);
   }, []);
 
+  // onSubmit: enter를 눌러도 이벤트 발생
   const onSubmit = useCallback(
     (e) => {
       onInsert(value);
